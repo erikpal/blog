@@ -1,0 +1,18 @@
+---
+title: Hello World
+author: Erik Palmore
+date: '2017-12-20'
+slug: hello-world
+categories:
+  - Ideas
+tags:
+  - ideas
+  - this.blog
+menu: main
+---
+
+About two years ago I started learning R.  I felt like I had reached the end of what I could accomplish with data ans analysis using Excel and other tools, and was surrounded by lots of opportunities to support faculty members as R was advancing in various fields.  I took several courses and "got it," but was definitely in a confused, liminal state on my way to really understanding it.  I stopped taking classes and turned my attention to multidisciplinary "explorations."  By putting what I was learning into real products, I found it a lot easier to make sense of what I was learning and to move onto what I wanted to learn next. 
+
+As of this writing, my R project directory holds 52 different projects - some for work, some for learning, some to assist friends and colleagues. I have aspirations to continue to learn new data science and statistical program skills through a range of interesting projects.  The purpose of this blog is to share some of these results so that people can learn from and with my work (or just better understand what it is I am doing!).
+
+Thanks and stay tuned.

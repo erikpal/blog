@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Erik Blog</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on Erik Blog</description>
+    <title>This.blog on Erik Blog</title>
+    <link>/tags/this.blog/</link>
+    <description>Recent content in This.blog on Erik Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/this.blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,17 +18,6 @@
       
       <guid>/post/hello-world/</guid>
       <description>About two years ago I started learning R. I felt like I had reached the end of what I could accomplish with data ans analysis using Excel and other tools, and was surrounded by lots of opportunities to support faculty members as R was advancing in various fields. I took several courses and “got it,” but was definitely in a confused, liminal state on my way to really understanding it. I stopped taking classes and turned my attention to multidisciplinary “explorations.</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2 ## 1st Qu.:12.0 1st Qu.: 26 ## Median :15.0 Median : 36 ## Mean :15.4 Mean : 43 ## 3rd Qu.</description>
     </item>
     
   </channel>
