@@ -1,0 +1,15 @@
+---
+title: Using Blogdown
+author: Erik Palmore
+date: '2017-12-20'
+slug: using-blogdown
+categories:
+  - R
+tags:
+  - R
+  - this.blog
+  - blogdown
+---
+
+https://bookdown.org/yihui/blogdown/static-sites.html
+https://github.com/erikpal/blog
