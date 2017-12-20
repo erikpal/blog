@@ -1,6 +1,6 @@
 +++
 title = "About"
-date = "2012-12-020"
+date = "2012-12-02"
 menu = "main"
 +++
 
