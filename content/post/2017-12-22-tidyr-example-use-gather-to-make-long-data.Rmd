@@ -19,7 +19,7 @@ tags:
 
 I had the chance to make a very clean example of making long data from wide data.  After a conversation about enrollment trends and demographics, I wanted to look more closely at the composition of students a four-year institutions in St. Louis.  The data file available from [IPEDS](https://nces.ed.gov/ipeds/) provided a variable for each race/ethnicity class, further broken down by gender and total, for each year.  The wide from with 160+ variables is simply to hard do much exploration with, but the tidy, long version, makes it much easier to work with (including some nice quick ggplots).
 
-![](images/ipeds.png) 
+![](../images/ipeds.png) 
 
 After loading the CSV file, the first thing I do is rename the columns by finding/replacing with blank the portions that I don't need.  They column names are just too long.  Plus, I want to extract the year as its own variable, so it is easiest if I just remove everything after the year.
 ```{r eval=FALSE}
