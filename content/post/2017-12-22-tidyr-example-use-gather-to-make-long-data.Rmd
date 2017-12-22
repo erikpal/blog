@@ -3,6 +3,7 @@ title: Tidyr example - use gather to make long data
 author: Erik Palmore
 date: '2017-12-22'
 slug: tidyr-example-use-gather-to-make-long-data
+thumbnail: "/post/images/ipeds.png"
 categories:
   - R
   - Examples
