@@ -1,0 +1,36 @@
+---
+title: Tidyr example - use gather to make long data
+author: Erik Palmore
+date: '2017-12-22'
+slug: tidyr-example-use-gather-to-make-long-data
+categories:
+  - R
+  - Examples
+tags:
+  - tidyr
+  - examples
+  - tutorials
+  - education
+  - ipeds
+  - regx
+  - gather
+  - long
+---
+
+I had the chance to make a very clean example of making long data from wide data.  After a conversation about enrollment trends and demographics, I wanted to look more closely at the composition of students a four-year institutions in St. Louis.  The data file available from [IPEDS](https://nces.ed.gov/ipeds/) provided a variable for each race/ethnicity class, further broken down by gender and total, for each year.  The wide from with 160+ variables is simply to hard do much exploration with, but the tidy, long version, makes it much easier to work with (including some nice quick ggplots).
+
+![](images/ipeds.png) 
+
+After loading the CSV file, the first thing I do is rename the columns by finding/replacing with blank the portions that I don't need.  They column names are just too long.  Plus, I want to extract the year as its own variable, so it is easiest if I just remove everything after the year.
+```{r eval=FALSE}
+names(df) <- gsub("A_RV..Full.time.students..Undergraduate.total.|A..Full.time.students..Undergraduate.total.", "", names(df))
+```
+
+Now that I have this, I can very easily use tidyr to "gather" the data to a long form and extract the year.  First, the gather function is provided the name "Group" which will hold the variable name from those 160+ columns.  "Enrollment" is the new column name that all of those values will be organized into.  The "-UnitID", and "-Institution.Name" is there to indicate NOT to gather these columns into the two new, long columns.
+```{r eval=FALSE}
+df <- df %>% gather(Group, Enrollment, -UnitID, -Institution.Name) %>% 
+      extract(Group, c("Group", "Year"), "(.*)(201.$)")
+```
+The extract function is really great, and I'd been looking for something like this.  It is like an advanced text-to-columns if you're familiar with that Excel feature.  The first argument, "Group" is the column of data, the vector of c("Group", "Year") are the column names that will emerge, and the final text is a regular expression with the same number of capturing groups (in parenthesis) as th new columns.  ".*" is basically everything before the year, and the "201.$" is the year for its own new column.
+
+The resulting data is nicely organized into UnitID, Institution.Name, Group, Enrollment, and Year!
